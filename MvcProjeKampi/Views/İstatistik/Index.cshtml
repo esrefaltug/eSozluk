@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div class="card-deck">
+    <div class="card text-white bg-primary mb-4 " style="max-width: 20rem;">
+        <div class="card-header">İSTATİSTİK</div>
+        <div class="card-body">
+            <h5 class="card-title">Toplam Kategori Sayısı</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.CategoryCount</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-secondary mb-4 " style="max-width: 20rem;">
+        <div class="card-header">İSTATİSTİK</div>
+        <div class="card-body">
+            <h5 class="card-title">) Başlık tablosunda "yazılım" kategorisine ait başlık sayısı</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.Heading</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-warning mb-4 " style="max-width: 20rem; ">
+        <div class="card-header">İSTATİSTİK</div>
+        <div class="card-body">
+            <h5 class="card-title">Yazar adında 'a' harfi geçen yazar sayısı</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.Writer</h5>
+        </div>
+    </div>
+</div>
+<div class="card-deck">
+    <div class="card text-white bg-fuchsia mb-6 " style="max-width: 20rem;">
+        <div class="card-header">İSTATİSTİK</div>
+        <div class="card-body">
+            <h5 class="card-title">En fazla başlığa sahip kategori adı</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.HeadingMax</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-6 " style="max-width: 20rem; height:auto">
+        <div class="card-header">İSTATİSTİK</div>
+        <div class="card-body">
+            <h5 class="card-title">Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.StatusFark</h5>
+        </div>
+    </div>
+</div>
